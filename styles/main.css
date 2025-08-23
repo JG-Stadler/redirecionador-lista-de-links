@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body,html{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;   
+}
+body{
+    background-image: url(../assets/images/textura-de-papel-branco.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.foto-de-apresentacao{
+    background-image: url("../assets/images/foto-principal-jg-stadler-mobile.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 0 0 55% 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.422);
+}
+.content{
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+.content h1{
+    font-family: 'Anton';
+    color: #fff;
+    text-shadow: 0 0 5px black;
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.link_rd{
+    background-color: rgb(83, 83, 83);
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 5px;
+    text-decoration: none;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.314);
+    border-radius: 10px;
+    justify-content: flex-start;
+    transition: 1s;
+}
+.link_rd p{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: color 1s;
+}
+.link_rd img{
+    width: 40px;
+    margin-right: 30px;
+    transition: filter 1s;
+}
+.link_rd:hover{
+    background-color: #fff;
+}
+.link_rd:hover>img{
+    filter: brightness(0);
+}
+.link_rd:hover>p{
+    color: black;
+}
+@media (min-width:640px) {
+    .foto-de-apresentacao{
+        background-image: url("../assets/images/foto-principal-jg-stadler-desktop.jpg");
+        background-position: center center;
+    }
+}
+@media (min-width:900) {
+    .foto-de-apresentacao{
+        background-image: url("../assets/images/foto-principal-jg-stadler-desktop.jpg");
+        background-position: center center;
+        height: 700px;
+    }
+}
+
+footer{
+    margin: 200px 0  20px 0;
+    text-align: center;
+    color: #ffffff83;
+}
