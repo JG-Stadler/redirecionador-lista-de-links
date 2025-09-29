@@ -23,7 +23,9 @@ body{
     height: 500px;
     width: 100%;
     border-radius: 0 0 55% 7%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.422);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.553);
+    max-width: 950px;
+    margin: auto;
 }
 .content{
     text-align: center;
@@ -55,6 +57,7 @@ body{
     border-radius: 10px;
     justify-content: flex-start;
     transition: 1s;
+    max-width: 950px;
 }
 .link_rd p{
     font-weight: bolder;
@@ -94,4 +97,5 @@ footer{
     margin: 200px 0  20px 0;
     text-align: center;
     color: #ffffff83;
+    opacity: 54%;
 }
